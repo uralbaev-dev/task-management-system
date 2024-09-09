@@ -1,0 +1,28 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:h2:mem:task-management-system
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+
+
+    #### Config для postgres
+    #spring:
+    #  datasource:
+    #    url: jdbc:postgresql://localhost:5432/task-management-system
+    #    username: postgres
+    #    password: password
+    #    driver-class-name: org.postgresql.Driver
+    #  jpa:
+    #    hibernate:
+    #      ddl-auto: update
+    #    show-sql: false
+    #    properties:
+    #      hibernate:
+    #        format_sql: true
+    #    database: postgresql
+    #    database-platform: org.hibernate.dialect.PostgreSQLDialect
